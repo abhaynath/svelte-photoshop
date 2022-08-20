@@ -5,4 +5,7 @@ import { svelte } from "@sveltejs/vite-plugin-svelte";
 export default defineConfig({
   base: "/svelte-photoshop/",
   plugins: [svelte()],
+  server:{
+    port:3030
+  }
 });
