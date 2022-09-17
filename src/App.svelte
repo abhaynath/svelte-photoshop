@@ -1,13 +1,15 @@
 <script lang="ts">
-  import LayerRow from "./components/layers/LayerRow.svelte";
+  import LayerRow from "@components/layers/LayerRow.svelte";
   import Button from "@smui/button";
   import IconButton from "@smui/icon-button";
+  import svelteLogo from "@assets/svelte.svg";
   let count = 0;
   let clicked = 0;
 </script>
 
 <div>
-  <!-- <LayerRow /> -->
+  <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
+  <LayerRow />
   <Button
     on:click={() => {
       count = count + 1;
